@@ -1,6 +1,6 @@
 # Chef Tash House website
 
-A single-page static site for Chef Tash House, structured like a keepsake booklet: a pink cover, a short personal letter, real menus from recent tables with the dishes they held, a quiet list of services, and a brown back-cover invitation. No build tools required.
+A single-page static site for Chef Tash House, structured like a keepsake booklet: a pink cover, a two-line hello with an expandable full bio, a sideways-scrolling strip of real menus from recent tables, a quiet list of services, and a brown back-cover invitation. No build tools required.
 
 ## Live site
 
@@ -38,7 +38,6 @@ Then visit `http://localhost:8000`.
 - `assets/tash-table.jpg` — cover portrait (circular crop from the supplied concept artwork)
 - `assets/menus/` — sample menus shown in the "from recent tables" section, resized for web
 
-To add or swap a menu: drop a PNG in `assets/menus/`, then copy one `<li class="table-row">` block in `index.html` and update the filename, alt text, occasion heading, and dish description.
+To add a menu or a food photo to the strip: drop the image in `assets/menus/`, then copy one `<li>` block inside `.menu-strip` in `index.html` and update the filename, alt text, and caption. Photos and menus can be interleaved in the same strip; once real food photos are in, delete the "photos from these tables are on their way" line.
 
 The site uses Google Fonts (`Labrada` and `DM Sans`). If it must work fully offline, download those font files and update the font declarations in `styles.css`.
-
