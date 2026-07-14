@@ -143,22 +143,6 @@ section, footer { scroll-margin-top: 1.5rem; }
 .letter p.lead { font-size: 1.16rem; }
 .letter .lead, .letter .lead ~ p { max-width: 37rem; }
 .letter .lead ~ p { margin-top: 1.4rem; }
-.letter .hand-off { font: italic 500 1.15rem/1.6 var(--serif); color: var(--berry); margin-top: 2rem; }
-.about-more { max-width: 37rem; margin-top: 1.6rem; }
-.about-more summary {
-  display: inline-block;
-  cursor: pointer;
-  list-style: none;
-  font: italic 500 1.05rem/1.4 var(--serif);
-  color: var(--berry);
-  border-bottom: 1px solid var(--rule);
-  padding-bottom: 1px;
-}
-.about-more summary::-webkit-details-marker { display: none; }
-.about-more summary::after { content: "\00a0\00a0+"; }
-.about-more[open] summary::after { content: "\00a0\00a0\2212"; }
-.about-more summary:hover { border-bottom-color: currentColor; }
-.about-more p { margin-top: 1.4rem; font-size: 0.97rem; }
 
 /* ---- Menus from recent tables ---- */
 .tables {
