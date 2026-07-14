@@ -1,6 +1,6 @@
 # Chef Tash House website
 
-A single-page static site for Chef Tash House, structured like a keepsake booklet: a pink cover, a two-line hello with an expandable full bio, a sideways-scrolling strip of real menus from recent tables, a quiet list of services, and a brown back-cover invitation. No build tools required.
+A single-page static site for Chef Tash House, structured like a keepsake booklet: a pink cover, a two-line hello that leads straight into a sideways-scrolling strip of real menus from recent tables, a quiet list of services, and a brown back-cover invitation. No build tools required.
 
 ## Live site
 
