@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Chef Tash House is a personal chef cooking in homes across the San Francisco Bay Area.">
+  <title>Chef Tash House — Personal Chef, San Francisco Bay Area</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Labrada:ital,wght@0,600;1,500;1,600;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#hello">Skip to content</a>
+
+  <header class="site-header">
+    <a class="mini-mark" href="#top">chef tash house</a>
+    <nav aria-label="Page navigation">
+      <a href="#menus">menus</a>
+      <a href="#about">about</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="top" class="hero">
+      <div class="hero-type">
+        <p class="location">personal chef · san francisco bay area</p>
+        <h1>chef tash<br>house</h1>
+        <a class="down-link" href="#menus">see what I’ve been cooking <span aria-hidden="true">↓</span></a>
+      </div>
+
+      <figure class="hero-photo">
+        <div class="photo-frame">
+          <img src="assets/tash-main.webp" alt="Tash smiling behind a table set with colorful small bites and vegetables" width="768" height="1024">
+        </div>
+        <figcaption>Hi, I’m Tash.</figcaption>
+      </figure>
+
+      <div id="hello" class="hello-note">
+        <p>I’m a personal chef who cooks in people’s homes—making food for everyday weeks, full tables, and the people gathered around them.</p>
+      </div>
+    </section>
+
+    <section id="menus" class="menus">
+      <header class="menus-heading">
+        <p class="section-kicker">sample menus</p>
+        <h2>made for<br><em>the table.</em></h2>
+        <p class="menu-instruction">Scroll to browse · select any menu to enlarge</p>
+      </header>
+
+      <div class="menu-stage" tabindex="0" aria-label="Scrollable gallery of sample menus">
+        <div class="menu-track">
+          <a class="menu-card" href="assets/menus/birthday-menu.webp" data-menu data-title="60th birthday dinner">
+            <img src="assets/menus/birthday-menu.webp" alt="Menu for a 60th birthday dinner" width="1294" height="2000" loading="lazy">
+            <span class="sr-only">View 60th birthday dinner menu</span>
+          </a>
+          <a class="menu-card" href="assets/menus/salon-holiday-menu.webp" data-menu data-title="Salon holiday party">
+            <img src="assets/menus/salon-holiday-menu.webp" alt="Green menu for a salon holiday party" width="1300" height="1683" loading="lazy">
+            <span class="sr-only">View salon holiday party menu</span>
+          </a>
+          <a class="menu-card" href="assets/menus/bbq-dinner-menu.webp" data-menu data-title="Backyard dinner">
+            <img src="assets/menus/bbq-dinner-menu.webp" alt="Colorful handwritten menu for a backyard dinner" width="1300" height="1819" loading="lazy">
+            <span class="sr-only">View backyard dinner menu</span>
+          </a>
+          <a class="menu-card" href="assets/menus/valentines-menu.webp" data-menu data-title="Valentine’s dinner">
+            <img src="assets/menus/valentines-menu.webp" alt="Illustrated Valentine’s dinner menu" width="1300" height="1819" loading="lazy">
+            <span class="sr-only">View Valentine’s dinner menu</span>
+          </a>
+          <a class="menu-card" href="assets/menus/bachelorette-menu.webp" data-menu data-title="Bachelorette dinner">
+            <img src="assets/menus/bachelorette-menu.webp" alt="Menu for a bachelorette dinner" width="1300" height="1819" loading="lazy">
+            <span class="sr-only">View bachelorette dinner menu</span>
+          </a>
+          <a class="menu-card" href="assets/menus/benefit-menu.webp" data-menu data-title="Benefit dinner">
+            <img src="assets/menus/benefit-menu.webp" alt="Menu for a benefit dinner" width="1300" height="1819" loading="lazy">
+            <span class="sr-only">View benefit dinner menu</span>
+          </a>
+          <a class="menu-card" href="assets/menus/izakaya-menu.webp" data-menu data-title="Izakaya Casa">
+            <img src="assets/menus/izakaya-menu.webp" alt="Geometric menu for an izakaya-style dinner" width="1300" height="1819" loading="lazy">
+            <span class="sr-only">View Izakaya Casa menu</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <details class="about-drawer">
+        <summary>
+          <span class="section-kicker">about me</span>
+          <span class="summary-title">A little more about Tash</span>
+          <span class="summary-action" aria-hidden="true"><i></i><i></i></span>
+        </summary>
+        <div class="about-content">
+          <p>Hi! I’m Tash House and I am a personal chef in the San Francisco Bay Area. I am a home cook turned classically trained chef via City College of San Francisco’s Culinary Arts and Hospitality Management program. I have been cooking in private clients’ homes since 2021 and in my own home since before I can remember.</p>
+          <p>With a background in childcare and a B.S. in Child Development from Cal Poly SLO, I have a unique understanding of creating satisfying and diverse meals for children. I have experience cooking for a variety of diets: gluten free, keto, vegan, low-carb, etc. I pay careful attention to details such as allergies, dietary restrictions, and preferences in order to customize each client’s experience.</p>
+          <p>I thrive in collaborative environments and value regular client feedback, using it to foster a positive, transparent, and trustworthy experience for everyone involved.</p>
+        </div>
+      </details>
+    </section>
+
+    <aside class="cooking-note" aria-label="Chef services">
+      <p class="section-kicker">ways I can cook for you</p>
+      <p>Weekly personal chef service <i>·</i> Dinner parties <i>·</i> Celebrations & gatherings</p>
+      <small>Dietary needs, allergies, preferences, and little eaters are always considered.</small>
+    </aside>
+  </main>
+
+  <footer id="contact" class="contact">
+    <p class="section-kicker">get in touch</p>
+    <h2>Let’s talk<br>about your table.</h2>
+    <p class="contact-note">Tell me what you’re planning—or what would make your week easier.</p>
+    <!-- Replace the email address below before publishing. -->
+    <a class="email" href="mailto:hello@cheftashhouse.com?subject=Hello%20from%20my%20kitchen">hello@cheftashhouse.com</a>
+    <div class="footer-line">
+      <span>chef tash house</span>
+      <span>san francisco bay area</span>
+      <span>© <span id="year"></span></span>
+    </div>
+  </footer>
+
+  <dialog class="menu-dialog" aria-label="Expanded menu">
+    <button class="dialog-close" type="button" aria-label="Close expanded menu">close ×</button>
+    <img src="" alt="">
+    <p></p>
+  </dialog>
+</body>
+</html>
