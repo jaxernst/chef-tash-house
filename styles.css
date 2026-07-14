@@ -133,7 +133,7 @@ section, footer { scroll-margin-top: 1.5rem; }
 }
 
 /* ---- The letter ---- */
-.letter { padding: clamp(4.5rem, 9vw, 7.5rem) 24px clamp(3rem, 6vw, 5rem); }
+.letter { padding: clamp(4rem, 8vw, 6.5rem) 24px clamp(2.5rem, 5vw, 3.5rem); }
 .letter-inner { max-width: 60rem; margin: 0 auto; }
 .salutation {
   font: italic 600 clamp(2.5rem, 5vw, 3.7rem)/1.1 var(--serif);
@@ -150,13 +150,8 @@ section, footer { scroll-margin-top: 1.5rem; }
   background: #fae7ed;
   overflow: hidden;
 }
-.tables-line {
-  margin: 0 24px;
-  font: italic 500 clamp(1.3rem, 2.4vw, 1.8rem)/1.4 var(--serif);
-  text-align: center;
-  letter-spacing: -0.015em;
-}
-.strip-wrap { margin-top: clamp(2.25rem, 5vw, 3.5rem); }
+.tables .small-label { margin-bottom: 0; text-align: center; }
+.strip-wrap { margin-top: clamp(1.75rem, 4vw, 2.75rem); }
 .menu-strip {
   list-style: none;
   margin: 0;
@@ -204,16 +199,7 @@ section, footer { scroll-margin-top: 1.5rem; }
 }
 
 /* ---- Ways i can cook ---- */
-.ways { padding: clamp(2rem, 4vw, 3.5rem) 24px clamp(5rem, 10vw, 8.5rem); }
-.pull {
-  max-width: 26rem;
-  margin: 0 auto clamp(4rem, 8vw, 6.5rem);
-  font: italic 500 clamp(1.55rem, 2.6vw, 2.05rem)/1.35 var(--serif);
-  letter-spacing: -0.015em;
-  color: var(--berry);
-  text-align: center;
-  transform: rotate(-1.2deg);
-}
+.ways { padding: clamp(4rem, 8vw, 6rem) 24px clamp(5rem, 10vw, 8.5rem); }
 .ways-inner { max-width: 60rem; margin: 0 auto; }
 .ways-list { max-width: 37rem; }
 .ways-list dt { font: italic 600 1.25rem/1.3 var(--serif); }
@@ -266,7 +252,6 @@ section, footer { scroll-margin-top: 1.5rem; }
   .cover { padding-top: 1.4rem; }
   .cover-nav { gap: 1.1rem 1.6rem; font-size: 0.78rem; }
   .portrait-disc { width: min(66vw, 280px); }
-  .pull { max-width: 19rem; }
   .menu-strip { scroll-snap-type: x mandatory; }
   .menu-strip img { height: auto; width: min(76vw, 330px); }
 }
