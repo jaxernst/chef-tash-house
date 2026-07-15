@@ -120,6 +120,7 @@ section, footer { scroll-margin-top: 1.5rem; }
 /* ---- Scalloped edges between panels ---- */
 .scallop { height: 22px; }
 .scallop-pink {
+  background-color: var(--blush);
   background-image: radial-gradient(circle at 11px -7px, var(--pink) 14px, rgba(244, 201, 214, 0) 15px);
   background-size: 22px 22px;
 }
@@ -140,10 +141,10 @@ section, footer { scroll-margin-top: 1.5rem; }
   background: var(--blush);
 }
 .letter-inner {
-  width: 100%;
-  max-width: 68rem;
-  margin: 0 auto;
-  padding: clamp(4rem, 8vw, 6rem) clamp(3rem, 8vw, 6.5rem);
+  width: min(52rem, 94%);
+  max-width: none;
+  margin: 0 auto 0 max(0px, calc((100vw - 72rem) / 2 - 24px));
+  padding: clamp(3.25rem, 6vw, 4.5rem) clamp(2.5rem, 6vw, 4.75rem);
   position: relative;
   z-index: 1;
   background:
@@ -163,10 +164,12 @@ section, footer { scroll-margin-top: 1.5rem; }
   margin-bottom: 2.25rem;
 }
 .letter p.lead { font-size: clamp(1.16rem, 2vw, 1.35rem); }
-.letter .lead, .letter .lead ~ p { max-width: 37rem; }
+.letter .lead, .letter .lead ~ p { max-width: 38rem; }
+.letter .lead a { color: var(--berry); text-underline-offset: 4px; }
+.letter .lead a:hover { color: var(--brown); }
 .letter .lead ~ p { margin-top: 1.4rem; }
 .chili-decoration {
-  width: clamp(160px, 19vw, 250px);
+  width: clamp(190px, 23vw, 310px);
   height: auto;
   position: absolute;
   z-index: 3;
@@ -304,8 +307,8 @@ section, footer { scroll-margin-top: 1.5rem; }
   .cover-nav { gap: 1.1rem 1.6rem; font-size: 0.78rem; }
   .portrait-disc { width: min(82vw, 350px); }
   .letter { min-height: 560px; padding: 3.5rem 14px 5rem; align-items: center; }
-  .letter-inner { padding: 3.75rem 1.9rem 4.25rem; }
-  .chili-decoration { width: 155px; right: 3vw; bottom: -58px; }
+  .letter-inner { width: 94%; margin-left: 0; padding: 3.25rem 1.9rem 3.75rem; }
+  .chili-decoration { width: 185px; right: 1vw; bottom: -70px; }
   .menu-strip { gap: 3.5rem; scroll-snap-type: x mandatory; }
   .menu-group { width: min(88vw, 430px); }
   .menu-group--solo { width: min(72vw, 330px); }
