@@ -75,7 +75,7 @@ section, footer { scroll-margin-top: 1.5rem; }
 .wordmark {
   max-width: 12ch;
   font: italic 900 clamp(3.1rem, 10.5vw, 8.2rem)/0.95 var(--serif);
-  letter-spacing: -0.035em;
+  letter-spacing: -0.025em;
   text-wrap: balance;
 }
 .cover-sub {
@@ -87,8 +87,8 @@ section, footer { scroll-margin-top: 1.5rem; }
 .portrait { margin-top: clamp(2.75rem, 6vh, 4.25rem); }
 .portrait-disc {
   display: block;
-  width: clamp(260px, 31vw, 380px);
-  aspect-ratio: 3 / 4;
+  width: clamp(280px, 38vw, 430px);
+  aspect-ratio: 1;
   position: relative;
 }
 .portrait-mask {
@@ -302,16 +302,12 @@ section, footer { scroll-margin-top: 1.5rem; }
 .social-link {
   width: max-content;
   margin: 1.5rem auto 0;
-  display: flex;
-  align-items: center;
-  gap: 0.65rem;
+  display: block;
   color: var(--pink);
-  font-size: 0.82rem;
-  letter-spacing: 0.08em;
-  text-underline-offset: 4px;
+  border-radius: 8px;
 }
-.social-link img { width: 28px; height: 28px; }
-.social-link:hover { color: var(--paper); }
+.social-link img { width: 32px; height: 32px; }
+.social-link:hover { opacity: 0.78; }
 .signoff {
   margin-top: clamp(2.75rem, 6vw, 4.25rem);
   font: italic 900 clamp(2.8rem, 6vw, 4.6rem)/1 var(--serif);
@@ -335,7 +331,7 @@ section, footer { scroll-margin-top: 1.5rem; }
   body { font-size: 16px; }
   .cover { padding-top: 1.4rem; }
   .cover-nav { gap: 1.1rem 1.6rem; font-size: 0.78rem; }
-  .portrait-disc { width: min(75vw, 300px); }
+  .portrait-disc { width: min(82vw, 330px); }
   .letter { min-height: 560px; padding: 3.5rem 14px 5rem; align-items: center; }
   .letter-inner { width: 94%; margin-left: 0; padding: 3.25rem 1.9rem 3.75rem; }
   .chili-decoration { width: 185px; right: 1vw; bottom: -70px; }
