@@ -190,13 +190,6 @@ section, footer { scroll-margin-top: 1.5rem; }
   letter-spacing: 0.18em;
   color: var(--berry);
 }
-.photos-note {
-  margin-top: clamp(2rem, 4vw, 3rem);
-  padding: 0 24px;
-  font: italic 500 0.98rem/1.5 var(--serif);
-  color: var(--berry);
-  text-align: center;
-}
 
 /* ---- Ways i can cook ---- */
 .ways { padding: clamp(4rem, 8vw, 6rem) 24px clamp(5rem, 10vw, 8.5rem); }

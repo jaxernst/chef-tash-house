@@ -25,7 +25,7 @@ Then visit `http://localhost:8000`.
 
 ## Content worth adding next (highest value first)
 
-1. Food photos from the four menus shown in "from recent tables" — each row is built to hold a photo beside its menu, and the "photos are on their way" note comes out once they're in
+1. More food photos for the "from recent tables" strip — especially ones matching the bbq, izakaya, and valentine's menus
 2. A real client testimonial with permission to name them (a quiet single quote would fit after the tables)
 3. An Instagram or booking link for the back cover
 4. A contact form link (Google Form, Formspree, HoneyBook) if email alone isn't enough
@@ -38,6 +38,6 @@ Then visit `http://localhost:8000`.
 - `assets/tash-table.jpg` — cover portrait (circular crop from the supplied concept artwork)
 - `assets/menus/` — sample menus shown in the "from recent tables" section, resized for web
 
-To add a menu or a food photo to the strip: drop the image in `assets/menus/`, then copy one `<li>` block inside `.menu-strip` in `index.html` and update the filename, alt text, and caption. Photos and menus can be interleaved in the same strip; once real food photos are in, delete the "photos from these tables are on their way" line.
+To add a menu or a food photo to the strip: drop the image in `assets/menus/`, then copy one `<li>` block inside `.menu-strip` in `index.html` and update the filename, alt text, and caption. Photos and menus interleave in the same strip; resize big phone photos first (`sips -Z 1400 file.jpg`) so the page stays fast.
 
 The site uses Google Fonts (`Labrada` and `DM Sans`). If it must work fully offline, download those font files and update the font declarations in `styles.css`.
