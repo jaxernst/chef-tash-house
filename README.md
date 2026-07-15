@@ -34,7 +34,7 @@ Then visit `http://localhost:8000`.
 - `index.html` — all page content and structure
 - `styles.css` — colors, typography, layout, scalloped dividers, and mobile styles
 - `script.js` — current year and the scroll-in reveal
-- `assets/tash-table.jpg` — cover portrait (circular crop from the supplied concept artwork)
+- `assets/tash-hero.webp` — cover artwork
 - `assets/chili.png` — favicon and floating chili decoration
 - `assets/menus/` — menus and food photos shown in the "from recent tables" section, resized for web
 
