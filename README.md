@@ -20,7 +20,6 @@ Then visit `http://localhost:8000`.
 
 ## Before publishing
 
-- `hello@cheftashhouse.com` in `index.html` — confirm or replace the contact email (it appears once, marked with an HTML comment)
 - "Menus and pricing: just ask" in the services list — replace with real pricing wording if desired
 
 ## Content worth adding next (highest value first)
@@ -36,8 +35,9 @@ Then visit `http://localhost:8000`.
 - `styles.css` — colors, typography, layout, scalloped dividers, and mobile styles
 - `script.js` — current year and the scroll-in reveal
 - `assets/tash-table.jpg` — cover portrait (circular crop from the supplied concept artwork)
-- `assets/menus/` — sample menus shown in the "from recent tables" section, resized for web
+- `assets/chili.png` — favicon and floating chili decoration
+- `assets/menus/` — menus and food photos shown in the "from recent tables" section, resized for web
 
-To add a menu or a food photo to the strip: drop the image in `assets/menus/`, then copy one `<li>` block inside `.menu-strip` in `index.html` and update the filename, alt text, and caption. Photos and menus interleave in the same strip; resize big phone photos first (`sips -Z 1400 file.jpg`) so the page stays fast.
+To add a menu group to the strip: drop the images in `assets/menus/`, then copy one `.menu-group` block in `index.html` and update its filenames, alt text, and caption. Use `.menu-group--paired` when a menu has matching food photos and `.menu-group--solo` when it does not. Resize big phone photos first (`sips -Z 1400 file.jpg`) so the page stays fast.
 
 The site uses Google Fonts (`Labrada` and `DM Sans`). If it must work fully offline, download those font files and update the font declarations in `styles.css`.

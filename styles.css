@@ -133,16 +133,36 @@ section, footer { scroll-margin-top: 1.5rem; }
 }
 
 /* ---- The letter ---- */
-.letter { padding: clamp(4rem, 8vw, 6.5rem) 24px clamp(2.5rem, 5vw, 3.5rem); }
-.letter-inner { max-width: 60rem; margin: 0 auto; }
+.letter {
+  min-height: clamp(390px, 52svh, 560px);
+  padding: clamp(5.5rem, 10vw, 8rem) 24px;
+  position: relative;
+  display: grid;
+  align-items: center;
+  overflow: hidden;
+}
+.letter-inner { width: 100%; max-width: 60rem; margin: 0 auto; position: relative; z-index: 1; }
 .salutation {
   font: italic 600 clamp(2.5rem, 5vw, 3.7rem)/1.1 var(--serif);
   letter-spacing: -0.03em;
   margin-bottom: 2.25rem;
 }
-.letter p.lead { font-size: 1.16rem; }
+.letter p.lead { font-size: clamp(1.16rem, 2vw, 1.35rem); }
 .letter .lead, .letter .lead ~ p { max-width: 37rem; }
 .letter .lead ~ p { margin-top: 1.4rem; }
+.chili-decoration {
+  width: clamp(90px, 12vw, 155px);
+  height: auto;
+  position: absolute;
+  right: max(4vw, 24px);
+  bottom: clamp(1.25rem, 4vw, 3.5rem);
+  filter: drop-shadow(0 10px 12px rgba(62, 39, 35, 0.12));
+  animation: chili-float 4.5s ease-in-out infinite;
+}
+@keyframes chili-float {
+  0%, 100% { transform: translateY(0) rotate(-13deg); }
+  50% { transform: translateY(-10px) rotate(-9deg); }
+}
 
 /* ---- Menus from recent tables ---- */
 .tables {
@@ -157,28 +177,50 @@ section, footer { scroll-margin-top: 1.5rem; }
   margin: 0;
   padding: 1.25rem max(24px, calc((100vw - 72rem) / 2)) 1.75rem;
   display: flex;
-  align-items: flex-start;
-  gap: clamp(2.25rem, 4vw, 3.75rem);
+  align-items: center;
+  gap: clamp(3.5rem, 7vw, 7rem);
   overflow-x: auto;
   scroll-snap-type: x proximity;
   scrollbar-width: thin;
   scrollbar-color: var(--pink-deep) transparent;
 }
-.menu-strip li { flex: 0 0 auto; scroll-snap-align: center; }
-.menu-strip a {
+.menu-group {
+  width: clamp(340px, 48vw, 610px);
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+}
+.menu-group--solo { width: clamp(250px, 29vw, 365px); }
+.menu-cluster {
+  display: grid;
+  grid-template-columns: minmax(210px, 1fr) minmax(120px, 0.54fr);
+  align-items: center;
+  gap: clamp(0.75rem, 2vw, 1.4rem);
+}
+.menu-group--solo .menu-cluster { display: block; }
+.menu-art,
+.food-photo {
   display: block;
-  padding: 8px;
   background: var(--card);
   border: 1px solid rgba(62, 39, 35, 0.14);
   box-shadow: 0 14px 32px rgba(62, 39, 35, 0.14);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.menu-strip li:nth-child(odd) a { transform: rotate(-1.2deg); }
-.menu-strip li:nth-child(even) a { transform: rotate(1.1deg); }
-.menu-strip a:hover { transform: rotate(0deg) translateY(-6px); box-shadow: 0 20px 40px rgba(62, 39, 35, 0.2); }
-.menu-strip img { height: clamp(430px, 68vh, 600px); width: auto; }
-.menu-strip li p {
-  margin-top: 1.1rem;
+.menu-art { padding: 8px; transform: rotate(-1.1deg); }
+.menu-group:nth-child(even) .menu-art { transform: rotate(1.1deg); }
+.menu-art img { width: 100%; height: auto; }
+.food-photos { display: grid; gap: clamp(0.75rem, 2vw, 1.25rem); }
+.food-photos--single { align-self: center; }
+.food-photo { padding: 6px; }
+.food-photo:first-child { transform: rotate(2.6deg); }
+.food-photo:nth-child(2) { transform: rotate(-2.3deg); }
+.food-photo img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; }
+.menu-art:hover,
+.food-photo:hover {
+  transform: rotate(0deg) translateY(-6px);
+  box-shadow: 0 20px 40px rgba(62, 39, 35, 0.2);
+}
+.menu-group > p {
+  margin-top: 1.35rem;
   font: italic 500 1rem/1.4 var(--serif);
   text-align: center;
 }
@@ -245,13 +287,19 @@ section, footer { scroll-margin-top: 1.5rem; }
   .cover { padding-top: 1.4rem; }
   .cover-nav { gap: 1.1rem 1.6rem; font-size: 0.78rem; }
   .portrait-disc { width: min(66vw, 280px); }
-  .menu-strip { scroll-snap-type: x mandatory; }
-  .menu-strip img { height: auto; width: min(76vw, 330px); }
+  .letter { min-height: 430px; padding: 5.5rem 24px 7rem; align-items: start; }
+  .chili-decoration { width: 92px; right: 7vw; bottom: 1rem; }
+  .menu-strip { gap: 3.5rem; scroll-snap-type: x mandatory; }
+  .menu-group { width: min(88vw, 430px); }
+  .menu-group--solo { width: min(72vw, 330px); }
+  .menu-cluster { grid-template-columns: minmax(165px, 1fr) minmax(95px, 0.5fr); gap: 0.65rem; }
+  .food-photos { gap: 0.65rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
   .cover-nav, .wordmark, .cover-sub, .portrait, .come-in { animation: none; }
+  .chili-decoration { animation: none; transform: rotate(-13deg); }
   .reveal { opacity: 1; transform: none; }
 }
