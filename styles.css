@@ -2,6 +2,7 @@
 :root {
   --pink: #f4c9d6;
   --pink-deep: #e5aec0;
+  --blush: #fae7ed;
   --brown: #3e2723;
   --paper: #fdf8f4;
   --card: #fffdfb;
@@ -130,14 +131,32 @@ section, footer { scroll-margin-top: 1.5rem; }
 
 /* ---- The letter ---- */
 .letter {
-  min-height: clamp(390px, 52svh, 560px);
-  padding: clamp(5.5rem, 10vw, 8rem) 24px;
+  min-height: clamp(540px, 66svh, 720px);
+  padding: clamp(4rem, 8vw, 6.5rem) 24px;
   position: relative;
   display: grid;
   align-items: center;
   overflow: visible;
+  background: var(--blush);
 }
-.letter-inner { width: 100%; max-width: 60rem; margin: 0 auto; position: relative; z-index: 1; }
+.letter-inner {
+  width: 100%;
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: clamp(4rem, 8vw, 6rem) clamp(3rem, 8vw, 6.5rem);
+  position: relative;
+  z-index: 1;
+  background:
+    radial-gradient(circle at 18% 24%, rgba(156, 74, 93, 0.035) 0 1px, transparent 1.5px) 0 0 / 19px 19px,
+    var(--card);
+  clip-path: polygon(
+    0.8% 2.2%, 4.5% 0.7%, 9% 1.5%, 14% 0.4%, 19% 1.4%, 25% 0.5%, 31% 1.6%, 37% 0.6%, 43% 1.3%, 49% 0.4%, 55% 1.5%, 61% 0.7%, 67% 1.4%, 73% 0.5%, 79% 1.6%, 85% 0.7%, 91% 1.5%, 96% 0.6%, 99.3% 2%,
+    98.8% 8%, 99.6% 15%, 98.9% 22%, 99.5% 29%, 98.8% 36%, 99.6% 43%, 98.9% 50%, 99.5% 57%, 98.8% 64%, 99.6% 71%, 98.9% 78%, 99.5% 85%, 98.8% 92%, 99.2% 97.8%,
+    95% 99.1%, 90% 98.3%, 85% 99.4%, 80% 98.4%, 75% 99.3%, 70% 98.2%, 65% 99.5%, 60% 98.4%, 55% 99.2%, 50% 98.3%, 45% 99.5%, 40% 98.4%, 35% 99.3%, 30% 98.2%, 25% 99.4%, 20% 98.3%, 15% 99.5%, 10% 98.4%, 5% 99.2%, 0.8% 97.7%,
+    1.3% 91%, 0.4% 84%, 1.2% 77%, 0.5% 70%, 1.2% 63%, 0.4% 56%, 1.1% 49%, 0.5% 42%, 1.2% 35%, 0.4% 28%, 1.1% 21%, 0.5% 14%
+  );
+  filter: drop-shadow(0 18px 22px rgba(62, 39, 35, 0.13));
+}
 .salutation {
   font: italic 600 clamp(2.5rem, 5vw, 3.7rem)/1.1 var(--serif);
   letter-spacing: -0.03em;
@@ -164,7 +183,7 @@ section, footer { scroll-margin-top: 1.5rem; }
 /* ---- Menus from recent tables ---- */
 .tables {
   padding: clamp(3rem, 6vw, 4.5rem) 0 clamp(3.5rem, 7vw, 5rem);
-  background: #fae7ed;
+  background: var(--blush);
   overflow: hidden;
 }
 .tables .small-label { margin-bottom: 0; text-align: center; }
@@ -284,7 +303,8 @@ section, footer { scroll-margin-top: 1.5rem; }
   .cover { padding-top: 1.4rem; }
   .cover-nav { gap: 1.1rem 1.6rem; font-size: 0.78rem; }
   .portrait-disc { width: min(82vw, 350px); }
-  .letter { min-height: 430px; padding: 5.5rem 24px 7rem; align-items: start; }
+  .letter { min-height: 560px; padding: 3.5rem 14px 5rem; align-items: center; }
+  .letter-inner { padding: 3.75rem 1.9rem 4.25rem; }
   .chili-decoration { width: 155px; right: 3vw; bottom: -58px; }
   .menu-strip { gap: 3.5rem; scroll-snap-type: x mandatory; }
   .menu-group { width: min(88vw, 430px); }
