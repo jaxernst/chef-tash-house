@@ -75,7 +75,7 @@ section, footer { scroll-margin-top: 1.5rem; }
 .wordmark {
   max-width: 12ch;
   font: italic 900 clamp(3.1rem, 10.5vw, 8.2rem)/0.95 var(--serif);
-  letter-spacing: -0.055em;
+  letter-spacing: -0.035em;
   text-wrap: balance;
 }
 .cover-sub {
@@ -87,10 +87,25 @@ section, footer { scroll-margin-top: 1.5rem; }
 .portrait { margin-top: clamp(2.75rem, 6vh, 4.25rem); }
 .portrait-disc {
   display: block;
-  width: clamp(280px, 40vw, 460px);
-  aspect-ratio: 1;
+  width: clamp(260px, 31vw, 380px);
+  aspect-ratio: 3 / 4;
+  position: relative;
 }
-.portrait-disc img { width: 100%; height: 100%; object-fit: contain; }
+.portrait-mask {
+  position: absolute;
+  inset: 0;
+  -webkit-mask: url("assets/hero-mask.png") center / 100% 100% no-repeat;
+  mask: url("assets/hero-mask.png") center / 100% 100% no-repeat;
+}
+.portrait-mask img { width: 100%; height: 100%; object-fit: cover; }
+.portrait-outline {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: fill;
+  pointer-events: none;
+}
 .portrait figcaption {
   margin-top: 1.25rem;
   font: italic 500 1.05rem/1.4 var(--serif);
@@ -202,14 +217,14 @@ section, footer { scroll-margin-top: 1.5rem; }
   scrollbar-color: var(--pink-deep) transparent;
 }
 .menu-group {
-  width: clamp(340px, 48vw, 610px);
+  width: clamp(440px, 56vw, 700px);
   flex: 0 0 auto;
   scroll-snap-align: center;
 }
 .menu-group--solo { width: clamp(250px, 29vw, 365px); }
 .menu-cluster {
   display: grid;
-  grid-template-columns: minmax(210px, 1fr) minmax(120px, 0.54fr);
+  grid-template-columns: minmax(250px, 1fr) minmax(170px, 0.7fr);
   align-items: center;
   gap: clamp(0.75rem, 2vw, 1.4rem);
 }
@@ -225,11 +240,15 @@ section, footer { scroll-margin-top: 1.5rem; }
 .menu-art { padding: 8px; transform: rotate(-1.1deg); }
 .menu-group:nth-child(even) .menu-art { transform: rotate(1.1deg); }
 .menu-art img { width: 100%; height: auto; }
-.food-photos { display: grid; gap: clamp(0.75rem, 2vw, 1.25rem); }
-.food-photos--single { align-self: center; }
+.food-photos { display: grid; gap: clamp(0.65rem, 1.5vw, 1rem); }
+.food-photos--mosaic { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .food-photo { padding: 6px; }
 .food-photo:first-child { transform: rotate(2.6deg); }
 .food-photo:nth-child(2) { transform: rotate(-2.3deg); }
+.food-photo:nth-child(3) { transform: rotate(-1.6deg); }
+.food-photo:nth-child(4) { transform: rotate(2deg); }
+.food-photo:nth-child(5) { transform: rotate(1.4deg); }
+.food-photo:nth-child(6) { transform: rotate(-2.1deg); }
 .food-photo img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; }
 .menu-art:hover,
 .food-photo:hover {
@@ -280,6 +299,19 @@ section, footer { scroll-margin-top: 1.5rem; }
   text-underline-offset: 6px;
 }
 .email:hover { color: var(--pink); }
+.social-link {
+  width: max-content;
+  margin: 1.5rem auto 0;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--pink);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-underline-offset: 4px;
+}
+.social-link img { width: 28px; height: 28px; }
+.social-link:hover { color: var(--paper); }
 .signoff {
   margin-top: clamp(2.75rem, 6vw, 4.25rem);
   font: italic 900 clamp(2.8rem, 6vw, 4.6rem)/1 var(--serif);
@@ -303,14 +335,14 @@ section, footer { scroll-margin-top: 1.5rem; }
   body { font-size: 16px; }
   .cover { padding-top: 1.4rem; }
   .cover-nav { gap: 1.1rem 1.6rem; font-size: 0.78rem; }
-  .portrait-disc { width: min(82vw, 350px); }
+  .portrait-disc { width: min(75vw, 300px); }
   .letter { min-height: 560px; padding: 3.5rem 14px 5rem; align-items: center; }
   .letter-inner { width: 94%; margin-left: 0; padding: 3.25rem 1.9rem 3.75rem; }
   .chili-decoration { width: 185px; right: 1vw; bottom: -70px; }
   .menu-strip { gap: 3.5rem; scroll-snap-type: x mandatory; }
-  .menu-group { width: min(88vw, 430px); }
+  .menu-group { width: min(92vw, 430px); }
   .menu-group--solo { width: min(72vw, 330px); }
-  .menu-cluster { grid-template-columns: minmax(165px, 1fr) minmax(95px, 0.5fr); gap: 0.65rem; }
+  .menu-cluster { grid-template-columns: minmax(170px, 1fr) minmax(115px, 0.66fr); gap: 0.65rem; }
   .food-photos { gap: 0.65rem; }
 }
 
