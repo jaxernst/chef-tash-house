@@ -165,8 +165,6 @@ section, footer { scroll-margin-top: 1.5rem; }
 }
 .letter p.lead { font-size: clamp(1.16rem, 2vw, 1.35rem); }
 .letter .lead, .letter .lead ~ p { max-width: 38rem; }
-.letter .lead a { color: var(--berry); text-underline-offset: 4px; }
-.letter .lead a:hover { color: var(--brown); }
 .letter .lead ~ p { margin-top: 1.4rem; }
 .chili-decoration {
   width: clamp(190px, 23vw, 310px);
