@@ -9,8 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Labrada:ital,wght@0,600;1,500;1,600;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260715-3">
-  <script src="script.js?v=20260715-3" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20260719-8">
+  <script src="script.js?v=20260719-8" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#hello">Skip to content</a>
@@ -27,7 +27,7 @@
       <p class="cover-sub">personal chef&ensp;·&ensp;san francisco bay area</p>
       <figure class="portrait">
         <span class="portrait-disc">
-          <span class="portrait-mask"><img src="assets/tash-main.webp" alt="Tash smiling behind an outdoor table set with colorful platters and small bites" width="768" height="1024"></span>
+          <span class="portrait-photo"><img src="assets/tash-main-framed.webp" alt="Tash smiling behind an outdoor table set with colorful platters and small bites" width="766" height="766"></span>
           <img class="portrait-outline" src="assets/hero-outline.png" alt="" width="766" height="766" aria-hidden="true">
         </span>
         <figcaption>fresh and seasonal food curated for you</figcaption>
@@ -43,7 +43,7 @@
       <div class="letter-inner">
         <p class="salutation reveal">hi!</p>
         <div class="reveal">
-          <p class="lead">I&rsquo;m Tash and I love food, dinner parties, seasonal vegetables, good wine, and cooking all types of cuisines to match the mood. I make curated meals and love sharing my food with others.</p>
+          <p class="lead">I&rsquo;m Tash and I love all things food - dinner parties, seasonal veggies, good wine, and cooking all types of cuisines to match the mood. I create curated meals and love sharing my food with others.</p>
         </div>
       </div>
       <img class="chili-decoration" src="assets/chili.png" alt="" width="500" height="500" aria-hidden="true">
@@ -69,19 +69,6 @@
           </li>
           <li class="menu-group menu-group--paired">
             <div class="menu-cluster">
-              <a class="menu-art" href="assets/menus/menu-bbq.webp" aria-label="Open bbq dinner party menu">
-                <img src="assets/menus/menu-bbq.webp" alt="Playful hand-lettered menu for a bbq dinner party with a sundae and float bar" width="1143" height="1600" loading="lazy">
-              </a>
-              <div class="food-photos food-photos--mosaic">
-                <a class="food-photo" href="assets/menus/bbq-spread.webp" aria-label="Open photo of the bbq spread"><img src="assets/menus/bbq-spread.webp" alt="Barbecue sides with cornbread muffins and a creamy salad" width="768" height="1024" loading="lazy"></a>
-                <a class="food-photo" href="assets/menus/bbq-table.webp" aria-label="Open photo of guests at the table"><img src="assets/menus/bbq-table.webp" alt="Guests gathered around a table for the bbq dinner" width="768" height="1024" loading="lazy"></a>
-                <a class="food-photo" href="assets/menus/bbq-chef.webp" aria-label="Open photo of Tash with the bbq spread"><img src="assets/menus/bbq-chef.webp" alt="Tash smiling beside the finished bbq dinner spread" width="768" height="1024" loading="lazy"></a>
-              </div>
-            </div>
-            <p>a bbq night with a sundae bar</p>
-          </li>
-          <li class="menu-group menu-group--paired">
-            <div class="menu-cluster">
               <a class="menu-art" href="assets/menus/menu-benefit.webp" aria-label="Open benefit dinner menu">
                 <img src="assets/menus/menu-benefit.webp" alt="Menu for a fall benefit dinner" width="1143" height="1600" loading="lazy">
               </a>
@@ -96,7 +83,20 @@
             </div>
             <p>a fall benefit dinner</p>
           </li>
-          <li class="menu-group menu-group--paired">
+          <li class="menu-group menu-group--paired menu-group--sparse">
+            <div class="menu-cluster">
+              <a class="menu-art" href="assets/menus/menu-bbq.webp" aria-label="Open bbq dinner party menu">
+                <img src="assets/menus/menu-bbq.webp" alt="Playful hand-lettered menu for a bbq dinner party with a sundae and float bar" width="1143" height="1600" loading="lazy">
+              </a>
+              <div class="food-photos food-photos--mosaic">
+                <a class="food-photo" href="assets/menus/bbq-spread.webp" aria-label="Open photo of the bbq spread"><img src="assets/menus/bbq-spread.webp" alt="Barbecue sides with cornbread muffins and a creamy salad" width="768" height="1024" loading="lazy"></a>
+                <a class="food-photo" href="assets/menus/bbq-table.webp" aria-label="Open photo of guests at the table"><img src="assets/menus/bbq-table.webp" alt="Guests gathered around a table for the bbq dinner" width="768" height="1024" loading="lazy"></a>
+                <a class="food-photo" href="assets/menus/bbq-chef.webp" aria-label="Open photo of Tash with the bbq spread"><img src="assets/menus/bbq-chef.webp" alt="Tash smiling beside the finished bbq dinner spread" width="768" height="1024" loading="lazy"></a>
+              </div>
+            </div>
+            <p>a bbq night with a sundae bar</p>
+          </li>
+          <li class="menu-group menu-group--paired menu-group--sparse">
             <div class="menu-cluster">
               <a class="menu-art" href="assets/menus/menu-izakaya.webp" aria-label="Open Izakaya Casa menu">
                 <img src="assets/menus/menu-izakaya.webp" alt="Patterned menu for an izakaya-style birthday dinner" width="1143" height="1600" loading="lazy">
@@ -124,6 +124,43 @@
         </ul>
       </div>
       <p class="strip-hint" aria-hidden="true">slide for more &rarr;</p>
+    </section>
+
+    <section id="meal-prep" class="meal-prep">
+      <div class="prep-heading reveal">
+        <h2 class="small-label">meal prep</h2>
+        <p>Weekly cooking in your kitchen, shaped around your preferences.</p>
+      </div>
+      <div class="strip-wrap reveal">
+        <ul class="prep-strip" tabindex="0" aria-label="Meal prep photos; scroll sideways to see them all">
+          <li class="prep-card prep-card--fridge">
+            <div class="prep-collage prep-collage--fridge">
+              <a class="prep-photo" href="assets/meal-prep/weekly-spread.webp" aria-label="Open photo of a week of prepared dishes"><img src="assets/meal-prep/weekly-spread.webp" alt="A week of prepared dishes including baked pasta, chicken cutlets, grains, and sauces" width="768" height="1024" loading="lazy"></a>
+              <a class="prep-photo" href="assets/meal-prep/fridge-ready.webp" aria-label="Open photo of fridge-ready meals"><img src="assets/meal-prep/fridge-ready.webp" alt="Labeled containers of soup, vegetables, egg bites, croutons, and chicken ready for the fridge" width="768" height="1024" loading="lazy"></a>
+              <a class="prep-photo" href="assets/meal-prep/meal-components.webp" aria-label="Open photo of prepared meal components"><img src="assets/meal-prep/meal-components.webp" alt="Prepared rice, vegetables, edamame, and seasoned meat ready to assemble into meals" width="1050" height="1400" loading="lazy"></a>
+            </div>
+            <p>a fridge full for the week</p>
+          </li>
+          <li class="prep-card prep-card--batch">
+            <div class="prep-collage prep-collage--batch">
+              <a class="prep-photo" href="assets/meal-prep/batch-cooking.webp" aria-label="Open photo of a batch-cooked meal spread"><img src="assets/meal-prep/batch-cooking.webp" alt="Batch-cooked pulled meat, roasted cauliflower, salad, vegetables, and brownies" width="1024" height="768" loading="lazy"></a>
+              <a class="prep-photo" href="assets/meal-prep/family-spread.webp" aria-label="Open photo of prepared family meals"><img src="assets/meal-prep/family-spread.webp" alt="Prepared chicken, vegetables, slaw, biscuits, and brownies ready for the week" width="1024" height="768" loading="lazy"></a>
+            </div>
+            <p>cooked right in your kitchen</p>
+          </li>
+          <li class="prep-card prep-card--plates">
+            <div class="prep-collage prep-collage--plates">
+              <a class="prep-photo" href="assets/meal-prep/lettuce-wraps.webp" aria-label="Open photo of lettuce wraps"><img src="assets/meal-prep/lettuce-wraps.webp" alt="Lettuce wraps with savory filling, scallions, peanuts, and crispy noodles" width="1050" height="1400" loading="lazy"></a>
+              <a class="prep-photo" href="assets/meal-prep/chicken-katsu.webp" aria-label="Open photo of chicken katsu"><img src="assets/meal-prep/chicken-katsu.webp" alt="Chicken katsu with rice and cucumber salad plated for a weekly meal" width="1050" height="1400" loading="lazy"></a>
+              <a class="prep-photo" href="assets/meal-prep/seared-ahi.webp" aria-label="Open photo of seared ahi"><img src="assets/meal-prep/seared-ahi.webp" alt="Seared ahi with scallions alongside a green salad and wine" width="1050" height="1400" loading="lazy"></a>
+              <a class="prep-photo" href="assets/meal-prep/pork-belly-ramen.webp" aria-label="Open photo of pork belly ramen"><img src="assets/meal-prep/pork-belly-ramen.webp" alt="Pork belly ramen with soft-boiled eggs, corn, scallions, and sesame" width="1050" height="1400" loading="lazy"></a>
+              <a class="prep-photo" href="assets/meal-prep/seasonal-vegetables.webp" aria-label="Open photo of seasonal vegetable dishes"><img src="assets/meal-prep/seasonal-vegetables.webp" alt="Colorful seasonal vegetable dishes and herbed potato salad" width="1050" height="1400" loading="lazy"></a>
+            </div>
+            <p>made for your tastes</p>
+          </li>
+        </ul>
+      </div>
+      <p class="prep-hint" aria-hidden="true">slide for more &rarr;</p>
     </section>
 
     <section id="cooking" class="ways">
@@ -155,5 +192,21 @@
     <p class="signoff" aria-hidden="true">&mdash; tash</p>
     <p class="colophon">chef tash house&ensp;·&ensp;personal chef, san francisco bay area&ensp;·&ensp;&copy; <span id="year"></span></p>
   </footer>
+
+  <dialog id="gallery-viewer" class="lightbox" aria-label="Image gallery" tabindex="-1">
+    <div class="lightbox-panel">
+      <button class="lightbox-close" type="button" aria-label="Close gallery">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 5l14 14M19 5 5 19"></path></svg>
+      </button>
+      <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous image">
+        <svg viewBox="0 0 32 24" aria-hidden="true" focusable="false"><path d="M29 12H4M13 3l-9 9 9 9"></path></svg>
+      </button>
+      <figure class="lightbox-figure"><img class="lightbox-image" alt=""></figure>
+      <button class="lightbox-nav lightbox-next" type="button" aria-label="Next image">
+        <svg viewBox="0 0 32 24" aria-hidden="true" focusable="false"><path d="M3 12h25M19 3l9 9-9 9"></path></svg>
+      </button>
+      <p class="lightbox-count" aria-live="polite"></p>
+    </div>
+  </dialog>
 </body>
 </html>

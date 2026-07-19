@@ -1,0 +1,235 @@
+{
+  "version": 1,
+  "sourceRoot": "assets/assets-source",
+  "defaults": {
+    "maxEdge": 1400,
+    "quality": 82,
+    "galleryMaxEdge": 2400,
+    "galleryQuality": 94
+  },
+  "ignored": [
+    {
+      "source": "IG LINK.png",
+      "reason": "Social/link artwork, not a website editorial image"
+    },
+    {
+      "source": "client meal prep/charcuterie board.JPG",
+      "reason": "Held for a future curated-food update rather than meal prep"
+    }
+  ],
+  "images": [
+    {
+      "source": "main photo.jpg",
+      "output": "tash-main-framed.webp",
+      "section": "hero",
+      "alt": "Tash smiling behind an outdoor table set with colorful platters and small bites",
+      "size": [766, 766],
+      "alphaMask": "hero-mask.png"
+    },
+    {
+      "source": "barrow salon party/apps.jpg",
+      "output": "menus/holiday-apps.webp",
+      "section": "recent-tables",
+      "alt": "Holiday appetizer table with crudites, dips, dates, and olives"
+    },
+    {
+      "source": "barrow salon party/main meal.jpg",
+      "output": "menus/holiday-table.webp",
+      "section": "recent-tables",
+      "alt": "Spanish-inspired dishes arranged family-style on the table"
+    },
+    {
+      "source": "barrow salon party/winter salad.jpg",
+      "output": "menus/holiday-salad.webp",
+      "section": "recent-tables",
+      "alt": "Winter chicory salad in a yellow serving bowl"
+    },
+    {
+      "source": "barrow salon party/gf_df desserts.jpg",
+      "output": "menus/holiday-desserts.webp",
+      "section": "recent-tables",
+      "alt": "Gluten-free and dairy-free cookies, dates, and chocolate"
+    },
+    {
+      "source": "bbq menu/536AF410-DD4B-4AE6-9BFB-75B079CB35AA_1_105_c.jpeg",
+      "output": "menus/bbq-spread.webp",
+      "section": "recent-tables",
+      "alt": "Barbecue sides with cornbread muffins and a creamy salad"
+    },
+    {
+      "source": "bbq menu/5AD22AD3-B811-4BE4-B7EF-7951C1394D1E_1_105_c.jpeg",
+      "output": "menus/bbq-table.webp",
+      "section": "recent-tables",
+      "alt": "Guests gathered around a table for the barbecue dinner"
+    },
+    {
+      "source": "bbq menu/FEDEC230-00F7-480D-A67A-66971042A2F3_1_105_c.jpeg",
+      "output": "menus/bbq-chef.webp",
+      "section": "recent-tables",
+      "alt": "Tash smiling beside the finished barbecue dinner spread"
+    },
+    {
+      "source": "cds benefit/02ADF2E7-EC9B-4E57-9213-0D2BE3800D24_1_105_c.jpeg",
+      "output": "menus/benefit-table.webp",
+      "section": "recent-tables",
+      "alt": "Outdoor appetizer table arranged for the benefit dinner"
+    },
+    {
+      "source": "cds benefit/54319F87-DD54-4D8D-8F7A-110A9F334C80_1_105_c.jpeg",
+      "output": "menus/benefit-apps.webp",
+      "section": "recent-tables",
+      "alt": "Belgian endive appetizers arranged on a colorful platter"
+    },
+    {
+      "source": "cds benefit/1374F014-71AB-4583-B2C4-508FDA7D07A7_1_105_c.jpeg",
+      "output": "menus/benefit-main.webp",
+      "section": "recent-tables",
+      "alt": "Plated salmon with greens and grilled seasonal vegetables"
+    },
+    {
+      "source": "cds benefit/8F96B05C-6D3F-4DE5-B1E0-376A4E043A24_1_105_c.jpeg",
+      "output": "menus/benefit-tomato.webp",
+      "section": "recent-tables",
+      "alt": "Plated first course finished with tomato and edible flowers"
+    },
+    {
+      "source": "cds benefit/F9DDFABC-A64E-4A43-BD06-C81864410741_4_5005_c.jpeg",
+      "output": "menus/benefit-salads.webp",
+      "section": "recent-tables",
+      "alt": "Fresh green salads being plated for benefit dinner guests"
+    },
+    {
+      "source": "cds benefit/0EAF3CF7-523C-4D53-9697-7AD0F8752123_1_105_c.jpeg",
+      "output": "menus/benefit-cake.webp",
+      "section": "recent-tables",
+      "alt": "Basque-style cheesecake decorated with edible flowers"
+    },
+    {
+      "source": "izakaya casa/1FF306D9-73A4-4257-9805-6FA592D6A2EA_1_105_c.jpeg",
+      "output": "menus/izakaya-crudo.webp",
+      "section": "recent-tables",
+      "alt": "Colorful crudo being finished at the table"
+    },
+    {
+      "source": "izakaya casa/9EC33768-45C0-49D7-A4F3-72599A8C05E7_1_102_a.jpeg",
+      "output": "menus/izakaya-tofu.webp",
+      "section": "recent-tables",
+      "alt": "Tofu course presented on a shiso leaf"
+    },
+    {
+      "source": "izakaya casa/C5224043-2F1E-452F-BF37-A7747808DD7A_1_102_a.jpeg",
+      "output": "menus/izakaya-rice.webp",
+      "section": "recent-tables",
+      "alt": "Crispy rice bites topped with avocado and sliced chile"
+    },
+    {
+      "source": "SAMPLE MENUS/alec 60 menu.png",
+      "output": "menus/menu-alec-60.webp",
+      "section": "recent-tables",
+      "alt": "Menu for a 60th birthday dinner",
+      "maxEdge": 1600
+    },
+    {
+      "source": "SAMPLE MENUS/barrow salon party menu.png",
+      "output": "menus/menu-holiday.webp",
+      "section": "recent-tables",
+      "alt": "Sage-green menu for a Spanish-inspired holiday party",
+      "maxEdge": 1600
+    },
+    {
+      "source": "SAMPLE MENUS/dinner party menu.png",
+      "output": "menus/menu-bbq.webp",
+      "section": "recent-tables",
+      "alt": "Playful hand-lettered menu for a barbecue dinner party with a sundae and float bar",
+      "maxEdge": 1600
+    },
+    {
+      "source": "SAMPLE MENUS/cds benefit menu.png",
+      "output": "menus/menu-benefit.webp",
+      "section": "recent-tables",
+      "alt": "Menu for a fall benefit dinner",
+      "maxEdge": 1600
+    },
+    {
+      "source": "SAMPLE MENUS/izakaya casa menu.png",
+      "output": "menus/menu-izakaya.webp",
+      "section": "recent-tables",
+      "alt": "Patterned menu for an izakaya-style birthday dinner",
+      "maxEdge": 1600
+    },
+    {
+      "source": "SAMPLE MENUS/kaya bachelorette menu.png",
+      "output": "menus/menu-bachelorette.webp",
+      "section": "recent-tables",
+      "alt": "Menu for a bachelorette dinner",
+      "maxEdge": 1600
+    },
+    {
+      "source": "SAMPLE MENUS/valentines menu (1).png",
+      "output": "menus/menu-valentines.webp",
+      "section": "recent-tables",
+      "alt": "Valentine's dinner menu with hand-drawn hearts and borders",
+      "maxEdge": 1600
+    },
+    {
+      "source": "client meal prep/E847A4CC-44FC-48AD-860F-F761E55D3416_1_201_a.jpeg",
+      "output": "meal-prep/lettuce-wraps.webp",
+      "section": "meal-prep",
+      "alt": "Lettuce wraps with savory filling, scallions, peanuts, and crispy noodles"
+    },
+    {
+      "source": "client meal prep/1CFABE07-6D1D-470D-BCA0-1897DF829DFF_1_201_a.jpeg",
+      "output": "meal-prep/chicken-katsu.webp",
+      "section": "meal-prep",
+      "alt": "Chicken katsu with rice and cucumber salad plated for a weekly meal"
+    },
+    {
+      "source": "client meal prep/5921223A-F748-4E41-A8EE-E45D0C65B989_1_105_c.jpeg",
+      "output": "meal-prep/weekly-spread.webp",
+      "section": "meal-prep",
+      "alt": "A week of prepared dishes including baked pasta, chicken cutlets, grains, and sauces"
+    },
+    {
+      "source": "client meal prep/26855B6A-2E70-4D65-85A0-5C3046CA181B_1_105_c.jpeg",
+      "output": "meal-prep/batch-cooking.webp",
+      "section": "meal-prep",
+      "alt": "Batch-cooked pulled meat, roasted cauliflower, salad, vegetables, and brownies"
+    },
+    {
+      "source": "client meal prep/78591D8F-698A-4D14-A10E-2B729518C9D3_1_105_c.jpeg",
+      "output": "meal-prep/family-spread.webp",
+      "section": "meal-prep",
+      "alt": "Prepared chicken, vegetables, slaw, biscuits, and brownies ready for the week"
+    },
+    {
+      "source": "client meal prep/019079FC-7771-445E-922C-2D3A87E2A5A3_1_105_c.jpeg",
+      "output": "meal-prep/fridge-ready.webp",
+      "section": "meal-prep",
+      "alt": "Labeled containers of soup, vegetables, egg bites, croutons, and chicken ready for the fridge"
+    },
+    {
+      "source": "client meal prep/C1422F66-AE99-4944-885F-A952A985A43A_1_201_a.jpeg",
+      "output": "meal-prep/meal-components.webp",
+      "section": "meal-prep",
+      "alt": "Prepared rice, vegetables, edamame, and seasoned meat ready to assemble into meals"
+    },
+    {
+      "source": "client meal prep/seared ahi.jpg",
+      "output": "meal-prep/seared-ahi.webp",
+      "section": "meal-prep",
+      "alt": "Seared ahi with scallions alongside a green salad and wine"
+    },
+    {
+      "source": "client meal prep/pork belly ramen.HEIC",
+      "output": "meal-prep/pork-belly-ramen.webp",
+      "section": "meal-prep",
+      "alt": "Pork belly ramen with soft-boiled eggs, corn, scallions, and sesame"
+    },
+    {
+      "source": "client meal prep/various veggies.HEIC",
+      "output": "meal-prep/seasonal-vegetables.webp",
+      "section": "meal-prep",
+      "alt": "Colorful seasonal vegetable dishes and herbed potato salad"
+    }
+  ]
+}

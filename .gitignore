@@ -1,1 +1,4 @@
 .DS_Store
+
+# Local raw photo library; web-ready derivatives are tracked instead.
+assets/assets-source/
