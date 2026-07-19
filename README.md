@@ -37,6 +37,7 @@ Then visit `http://localhost:8000`.
 - `assets/hero-mask.png` and `assets/hero-outline.png` — reusable pink brush treatment around the portrait
 - `assets/chili.png` — favicon and floating chili decoration
 - `assets/instagram.png` — footer Instagram mark
+- `assets/social-preview-20260719.jpg` — 1200×630 Open Graph link preview on the brand pink background
 - `assets/menus/` — web-ready menus and event photos in "from recent tables"
 - `assets/meal-prep/` — lightweight photos used in the meal-prep slider
 - `assets/gallery/` — higher-resolution derivatives loaded only when the modal gallery opens
