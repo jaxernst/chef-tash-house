@@ -43,6 +43,7 @@ Then visit `http://localhost:8000`.
 - `assets/gallery/` — higher-resolution derivatives loaded only when the modal gallery opens
 - `assets/asset-manifest.json` — source-to-web filename map, section, output settings, and alt text
 - `scripts/assets.py` — source-library audit and WebP generator
+- `resume/` — public `/resume/` viewer and downloadable resume PDF
 
 To add a menu group to the strip, add its web images to `assets/menus/`, then copy one `.menu-group` block in `index.html` and update the filenames, alt text, and caption. Use `.menu-group--paired` when a menu has matching food photos and `.menu-group--solo` when it does not.
 

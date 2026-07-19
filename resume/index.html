@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Resume for Natasha House, personal chef in the San Francisco Bay Area.">
+  <meta name="theme-color" content="#f4c9d6">
+  <link rel="canonical" href="https://cheftashhouse.com/resume/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chef Tash House">
+  <meta property="og:url" content="https://cheftashhouse.com/resume/">
+  <meta property="og:title" content="Natasha House — Personal Chef, SF Bay Area">
+  <meta property="og:description" content="Personal chef in the San Francisco Bay Area.">
+  <meta property="og:image" content="https://cheftashhouse.com/assets/social-preview-20260719.jpg">
+  <title>Natasha House — Resume</title>
+  <link rel="icon" type="image/png" href="../assets/chili.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Labrada:ital,wght@1,600;1,900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pink: #f4c9d6;
+      --brown: #3e2723;
+      --paper: #fdf8f4;
+      --serif: "Labrada", Georgia, serif;
+      --sans: "DM Sans", Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      min-height: 100dvh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      background: var(--paper);
+      color: var(--brown);
+      font-family: var(--sans);
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+    header {
+      min-height: 68px;
+      padding: 0.8rem clamp(1rem, 4vw, 2.5rem);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      background: var(--pink);
+    }
+    .brand {
+      font: italic 900 clamp(1.45rem, 4vw, 2rem)/1 var(--serif);
+      letter-spacing: -0.03em;
+      text-decoration: none;
+    }
+    nav { display: flex; align-items: center; gap: clamp(1rem, 3vw, 2rem); }
+    nav a {
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-underline-offset: 4px;
+    }
+    .download {
+      padding: 0.5rem 0.75rem;
+      border: 1px solid rgba(62, 39, 35, 0.35);
+      text-decoration: none;
+    }
+    .resume-frame {
+      width: 100%;
+      flex: 1;
+      border: 0;
+      background: var(--paper);
+    }
+    .fallback { padding: 2rem; text-align: center; }
+    @media (max-width: 520px) {
+      header { min-height: 62px; }
+      nav { gap: 0.8rem; }
+      nav a { font-size: 0.7rem; letter-spacing: 0.08em; }
+      .download { padding: 0.4rem 0.55rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="../">chef tash house</a>
+    <nav aria-label="Resume actions">
+      <a href="../">website</a>
+      <a class="download" href="tash-house-resume-2026.pdf" download>download pdf</a>
+    </nav>
+  </header>
+  <object class="resume-frame" data="tash-house-resume-2026.pdf" type="application/pdf" aria-label="Natasha House resume">
+    <p class="fallback">Your browser cannot display the PDF here. <a href="tash-house-resume-2026.pdf">Open the resume PDF</a>.</p>
+  </object>
+</body>
+</html>
