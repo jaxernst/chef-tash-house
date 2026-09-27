@@ -19,6 +19,37 @@
   ],
   "images": [
     {
+      "source": "september 2026 benefit/menu.png",
+      "output": "menus/menu-september-benefit.webp",
+      "section": "recent-tables",
+      "alt": "Olive-themed menu for a September 2026 benefit dinner",
+      "maxEdge": 1600
+    },
+    {
+      "source": "september 2026 benefit/crudo.jpg",
+      "output": "menus/september-crudo.webp",
+      "section": "recent-tables",
+      "alt": "Sicilian crudo plated in dark bowls with capers and herbs"
+    },
+    {
+      "source": "september 2026 benefit/salad-and-zucchini.jpg",
+      "output": "menus/september-salad.webp",
+      "section": "recent-tables",
+      "alt": "Radicchio Caesar salad with plates of pesto grilled zucchini"
+    },
+    {
+      "source": "september 2026 benefit/pasta.jpg",
+      "output": "menus/september-pasta.webp",
+      "section": "recent-tables",
+      "alt": "Three plates of pasta with beef bolognese and grated cheese"
+    },
+    {
+      "source": "september 2026 benefit/olive-oil-cake.jpg",
+      "output": "menus/september-cake.webp",
+      "section": "recent-tables",
+      "alt": "Slices of olive oil cake served with stone fruit and yogurt"
+    },
+    {
       "source": "main photo.jpg",
       "output": "tash-main-framed.webp",
       "section": "hero",
@@ -145,7 +176,7 @@
     },
     {
       "source": "SAMPLE MENUS/cds benefit menu.png",
-      "output": "menus/menu-benefit.webp",
+      "output": "menus/menu-benefit-updated.webp",
       "section": "recent-tables",
       "alt": "Menu for a fall benefit dinner",
       "maxEdge": 1600
